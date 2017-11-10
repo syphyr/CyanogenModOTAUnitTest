@@ -1,5 +1,5 @@
 var unirest = require('unirest'),
-    OtaHost = 'https://download.lineageos.org'; // Place here you OTA Server Url
+    OtaHost = 'http://192.168.1.5'; // Place here you OTA Server Url
 
 // Provide a list of currently available Delta updates
 var getDeltaUpdate = function(){

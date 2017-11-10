@@ -1,5 +1,5 @@
 var unirest = require('unirest'),
-    OtaHost = 'https://download.lineageos.org'; // Place here you OTA Server Url
+    OtaHost = 'http://192.168.1.5'; // Place here you OTA Server Url
 
 var getCMList = function(){
     unirest
@@ -12,7 +12,7 @@ var getCMList = function(){
     .send({
         'method' : 'get_all_builds',
         'params' : {
-            'device' : 'hammerhead',
+            'device' : 'p3110',
             'channels': [
                 'stable',
                 'snapshot',
